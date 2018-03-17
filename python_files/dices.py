@@ -23,9 +23,6 @@ f_myfiles = open('myfiles.pickle', 'rb')
 Passwords = pickle.load(f_myfiles)
 f_myfiles.close()
 
-print(Username)
-print(Passwords)
-
 EnterUsername=input("Enter Your Username")
 Password= input ("Enter Your Password")
 
@@ -42,8 +39,6 @@ while EnterUsername not in Username:
     f_myfile = open('myfile.pickle', 'rb')
     Username = pickle.load(f_myfile)
     f_myfile.close()
-
-    print(Username)
 
     Passwords.append(Password)
 
